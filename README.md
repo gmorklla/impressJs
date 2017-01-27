@@ -1,3 +1,3 @@
-"# impressJs"
+## Presentación usando impressJs
 
-# Documentación: https://github.com/impress/impress.js
+### Documentación: https://github.com/impress/impress.js
