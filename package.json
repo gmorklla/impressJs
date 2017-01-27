@@ -1,0 +1,16 @@
+{
+  "name": "impressjs",
+  "version": "1.0.0",
+  "description": "SSDrSimi impressJs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro RV",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1"
+  }
+}
