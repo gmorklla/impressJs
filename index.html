@@ -1,147 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
-    
+    <title>impress.js | Presentación SSDrSimi</title>
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
-
+    <meta name="author" content="Alejandro RV" />
     <link href="https://fonts.googleapis.com/css?family=Anton|Arsenal" rel="stylesheet">
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/animate.css" rel="stylesheet" />
-
     <link href="css/estilos.css" rel="stylesheet" />
-    
+    <link href="css/style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 <html lang="en">
 
 <body class="impress-not-supported">
-
-<!--
+    <!--
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
 -->
-<div class="fallback-message">
-    <p>Tu navegador <b>no tiene los requerimientos necesarios</b> para usar el framework usado en esta presentación, por lo que se presentará una versión simplificada.</p>
-    <p>Para que la visualización sea adecuada, por favor usa las últimas versiones de <b>Chrome</b>, <b>Safari</b> o <b>Firefox</b>.</p>
-</div>
-
-<div id="impress" data-transition-duration="2000">
-
-
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-		<div class="row">
-			<hr>
-			<div class="row">
-			  <div class="col-md-4 col-md-offset-1"><img class="logo" src="img/logo.png" alt="Logo"></div>
-			  <div class="col-md-4 col-md-offset-2"><img class="logo" src="img/logoG.png" alt="Logo"></div>
-			</div>
-			<hr>
-		</div>		
-		<div class="site-wrapper">
-			<div class="site-wrapper-inner">
-				<div class="cover-container">
-					<q class="text-center titleBlock"><span class="lightTxt">Inducción a la</span> <b class="titulo">Empresa</b></q>
-				</div>
-			</div>
-		</div>
+    <div class="fallback-message">
+        <p>Tu navegador <b>no tiene los requerimientos necesarios</b> para usar el framework usado en esta presentación, por lo que se presentará una versión simplificada.</p>
+        <p>Para que la visualización sea adecuada, por favor usa las últimas versiones de <b>Chrome</b>, <b>Safari</b> o <b>Firefox</b>.</p>
     </div>
-
-
-    <div class="step slide" data-x="0" data-y="-1500">
-		<div class="row">
-			<hr>
-			<p class="text-center"><img class="logo" src="img/logo.png" alt="Logo"></p>
-			<hr>
-		</div>    
-        <q class="text-center titulo titleBlock" style="color: azure;">Objetivo</q>
-        <q class="txt"><b><span class="bigger">Sistemas de Salud del Dr. Simi</span></b> como parte de <span>Grupo por un País Mejor</span> comparte los valores y la filosofía altruista de la Mística.</q>
-        <q class="txt">En este curso descubrirás la <span>estructura</span> del GPUPM desde sus inicios hasta la aparición de nuestra empresa Sistemas de Salud del Dr. Simi, además podrás conocer los <span>beneficios</span> que recibes como parte de la empresa, misión, visión, valores, etc.</q>
-        <q class="txt"><b><span class="bigger" style="color: #709aff !important">¡Recuerda que al ser parte del Grupo…</span></b></q>        
+    <div id="impress" data-transition-duration="2000" data-autoplay="off">
+        <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+            <div class="row">
+                <hr>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-md-offset-1 col-xs-offset-3 col-sm-offset-3">
+                        <p class="text-center">
+                            <img class="logo" src="img/logo.png" alt="Logo">
+                        </p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-md-offset-2 col-xs-offset-3 col-sm-offset-3">
+                        <p class="text-center">
+                            <img class="logo" src="img/logoG.png" alt="Logo">
+                        </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="site-wrapper">
+                <div class="site-wrapper-inner">
+                    <div class="cover-container">
+                        <q class="text-center titleBlock"><span class="lightTxt">Inducción a la</span> <b class="titulo">Empresa</b></q>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step slide" data-x="0" data-y="-1500">
+            <div class="row">
+                <hr>
+                <p class="text-center"><img class="logo" src="img/logo.png" alt="Logo"></p>
+                <hr>
+            </div>
+            <q class="text-center titulo titleBlock" style="color: azure;">Objetivo</q>
+            <q class="txt"><b><span class="especial">Sistemas de Salud del Dr. Simi</span></b> como parte de <span>Grupo por un País Mejor</span> comparte los valores y la filosofía altruista de la Mística.</q>
+            <q class="txt">En este curso descubrirás la <span>estructura</span> del GPUPM desde sus inicios hasta la aparición de nuestra empresa Sistemas de Salud del Dr. Simi, además podrás conocer los <span>beneficios</span> que recibes como parte de la empresa, misión, visión, valores, etc.</q>
+            <q class="txt"><b><span class="especial" style="color: #708090 !important">¡Recuerda que al ser parte del Grupo…</span></b></q>
+        </div>
+        <div id="eslabon" class="step" data-x="0" data-y="0" data-scale="4">
+            <span class="try colorOne">eres un eslabón</span>
+            <h1>muy importante!</h1>
+            <span class="footnote colorTwo">...en la cadena de ayuda a los que menos tienen.</span>
+        </div>
+        <div id="qEsMistica" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+            <p>¿Qué es la <strong><span>mística?</span></strong>
+                <br/>
+        </div>
+        <div class="step slide" data-x="1500" data-y="3500">
+            <div class="row">
+                <hr>
+                <p class="text-center"><img class="logo" src="img/logo.png" alt="Logo"></p>
+                <hr>
+            </div>
+            <q class="text-center titulo titleBlock" style="color: azure;">Mística</q>
+            <q class="txt text-center"><span class="especial">Es una filosofía de vida que nos enriquece, y la razón de ser de nuestro trabajo.</span></q>
+        </div>        
+        <div id="misticaEs" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+            <p>Mística es <b>amor</b></p>
+            <span class="animated fadeInLeftCinco">a los clientes</span>
+            <span class="animated fadeInLeftTres segundo">al trabajo</span>
+            <span class="animated fadeInLeft tercero">a la empresa</span>
+            <span class="animated fadeInLeftOcho cuarto">a los colaboradores</span>
+        </div>
+        <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+            <p>también <b>significa</b> :</p>
+        </div>
+        <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+            <p><span>Ser congruente entre lo que:</span></p>
+            <p><b class="animated rubberBand">se dice</b> <b class="animated rubberBand segundo">se piensa</b><b class="animated rubberBand tercero">se hace</b></p>
+        </div>
+        <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+            <p class="animated fadeInLeft">Aplicar la justicia en todo momento</p>
+            <p class="animated fadeInLeft segundo"><b>Si actúas bien te irá bien.</b></p>
+            <p class="animated fadeInLeft tercero"><b>Si actúas mal te irá mal.</b></p>
+            <p class="animated fadeInLeft cuarto">Somos una empresa donde todos ganan.</p>
+        </div>
+        <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+            <p>Yo actúo</p>
+            <q>con mística cuando...</q>
+        </div>
+        <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+            <p>one more thing...</p>
+        </div>
+        <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+            <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+            <span class="footnote">* beat that, prezi ;)</span>
+        </div>
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        </div>
     </div>
-
-
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">eres un eslabón</span>
-        <h1>muy importante!</h1>
-        <span class="footnote">...en la cadena de ayuda a los que menos tienen.</span>
+    <div class="hint">
+        <p>Usa las flechas de tu teclado para navegar</p>
     </div>
-
-
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>¿Qué es la <strong><span>mística?</span></strong><br/>
-    </div>
-
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>Mística es <b>amor</b></p>
-        <span>a los clientes</span>
-        <span>al trabajo</span>
-        <span>a la empresa</span>
-        <span>a los colaboradores</span>
-    </div>
-
-
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>también <b>significa</b> :</p>
-    </div>
-
-
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-    	<p><span>Ser congruente entre lo que:</span></p>
-        <p><b class="animated rubberBand">se dice</b> <b class="animated rubberBand segundo">se piensa</b><b class="animated rubberBand tercero">se hace</b></p>
-    </div>
-
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p class="animated fadeInLeft">Aplicar la justicia en todo momento</p>
-        <p class="animated fadeInLeft segundo"><b>Si actúas bien te irá bien.</b></p>
-        <p class="animated fadeInLeft tercero"><b>Si actúas mal te irá mal.</b></p>
-        <p class="animated fadeInLeft cuarto">Somos una empresa donde todos ganan.</p>
-    </div>
-
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>Yo actúo</p>
-        <q>con mística cuando...</q>
-    </div>
-
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-    </div>
-
-
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
-    </div>
-
-
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-    </div>
-
-</div>
-
-
-<div class="hint">
-    <p>Usa las flechas de tu teclado para navegar</p>
-</div>
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
-
-
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
-
-
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+    <script src="js/impress.js"></script>
+    <script>
+    impress().init();
+    </script>
 </body>
+
 </html>
-
-

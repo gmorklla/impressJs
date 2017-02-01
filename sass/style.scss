@@ -1,0 +1,104 @@
+/* ----- Imports ----- */
+
+@import 'reset';
+
+
+
+/* ----- Variables ----- */
+
+/* Fonts */
+
+$font-primero: 'Arsenal', sans-serif !important;
+$font-segundo: 'Anton', sans-serif !important;
+
+/* Colors */
+
+$color-primero: lightslategray !important;
+$color-segundo: violet !important;
+$color-tercero: yellowgreen !important;
+$color-cuarto: azure !important;
+
+
+
+/* ----- Mixins ----- */
+
+/* Set font */
+
+@mixin setFont($size, $lineH) {
+	font-size: $size;
+	line-height: $lineH;
+}
+
+/* Delays */
+
+@mixin aniDelay($delay) {
+    -webkit-animation-delay: $delay !important;
+    -moz-animation-delay:    $delay !important;
+    -ms-animation-delay:     $delay !important;
+    -o-animation-delay:      $delay !important;
+    animation-delay:         $delay !important;
+}
+
+
+/* ----- Styles implementations ----- */
+
+html, body {
+	font-family: $font-primero;
+}
+
+.fallback-message {
+	font-family: $font-primero;
+}
+
+.titulo {
+	font-family: $font-segundo;
+}
+
+.lightTxt, .titulo {
+	color: $color-cuarto;
+}
+
+.present .segundo { 
+	@include aniDelay(0.25s);
+}
+
+.present .tercero { 
+	@include aniDelay(0.5s);
+}
+
+.present .cuarto { 
+	@include aniDelay(0.75s);
+}
+
+.step {
+	@include setFont(48px, 1.5);
+}
+
+.slide {
+	@include setFont(30px, 36px);
+}
+
+.slide q {
+	@include setFont(50px, 72px);
+}
+
+.slide .txt {
+	@include setFont(25px, 30px);
+	color: $color-primero;
+}
+
+#eslabon {
+	color: $color-cuarto;
+}
+
+#misticaEs {
+	@include setFont(60px, 1);
+}
+
+#misticaEs b {
+	@include setFont(250px, 250px);
+}
+
+#misticaEs .thoughts {
+	@include setFont(90px, 150px);
+}
