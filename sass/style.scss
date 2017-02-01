@@ -39,6 +39,16 @@ $color-cuarto: azure !important;
     animation-delay:         $delay !important;
 }
 
+@mixin traDelay($delay) {
+	-webkit-transition-delay: $delay;
+	-o-transition-delay: $delay;
+	transition-delay: $delay;
+}
+
+@mixin transition($time) {	
+	transition: $time;
+}
+
 
 /* ----- Styles implementations ----- */
 
