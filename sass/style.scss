@@ -45,8 +45,22 @@ $color-cuarto: azure !important;
 	transition-delay: $delay;
 }
 
-@mixin transition($time) {	
+@mixin transition($time) {
 	transition: $time;
+}
+
+@mixin transZ($pixels) {
+	-webkit-transform: translateZ($pixels);
+	-ms-transform: translateZ($pixels);
+	-o-transform: translateZ($pixels);
+	transform: translateZ($pixels);
+}
+
+@mixin transY($pixels) {
+	-webkit-transform: translateY($pixels);
+	-ms-transform: translateY($pixels);
+	-o-transform: translateY($pixels);
+	transform: translateY($pixels);
 }
 
 
@@ -68,15 +82,15 @@ html, body {
 	color: $color-cuarto;
 }
 
-.present .segundo { 
+.present .segundo {
 	@include aniDelay(0.25s);
 }
 
-.present .tercero { 
+.present .tercero {
 	@include aniDelay(0.5s);
 }
 
-.present .cuarto { 
+.present .cuarto {
 	@include aniDelay(0.75s);
 }
 
@@ -101,6 +115,20 @@ html, body {
 	color: $color-cuarto;
 }
 
+.eslabon {
+	.try {
+		@include setFont(64px, 50px);
+		@include transZ(20px);
+	}
+	h1 {
+		@include setFont(100px, 150px);
+		@include transZ(50px);
+	}
+	.footnote {
+		@include setFont(32px, 1);
+	}
+}
+
 #misticaEs {
 	@include setFont(60px, 1);
 }
@@ -111,4 +139,64 @@ html, body {
 
 #misticaEs .thoughts {
 	@include setFont(90px, 150px);
+}
+
+#its-in-3d {
+	b {
+		@include transZ(40px);
+	}
+	b, span {
+		display: inline-block;
+		@include transition(0.5s);
+	}
+	p {
+		transform-style: preserve-3d;
+	}
+	.have {
+		@include transZ(-40px);
+	}
+	.you {
+		@include transZ(20px);
+	}
+	.noticed {
+		@include transZ(-40px);
+	}
+	.its {
+		@include transZ(60px);
+	}
+	.in {
+		@include transZ(-10px);
+	}
+	.footnote {
+		@include transZ(-10px);
+		@include setFont(32px, 1);
+	}
+	&.present b {
+		@include transZ(0px);
+	}
+	&.present span {
+		@include transZ(0px);
+	}
+}
+
+.hint {
+	@include transY(400px);
+	@include setFont(20px, 1);
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+    padding: 20px;
+
+    z-index: 100;
+    opacity: 0;
+}
+
+.impress-on-bored .hint {
+	@include transY(0px);
 }
