@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.container {
+			display: flex;
+			flex-flow: row wrap;
+			background-color: azure;
+			justify-content: flex-end;
+		}
+		.item {
+			background: tomato;
+			padding: 1em;
+			color: white;
+			font-weight: bold;
+			font-size: 3em;
+			text-align: center;
+			margin: 0 5px;
+		}
+		@media all and (max-width: 800px) {
+			.container {
+				justify-content: space-around;
+			}
+		}
+		@media all and (max-width: 500px) {
+			.container {
+				flex-direction: column wrap;
+				margin: 0;
+			}
+			.item {
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p class="item uno">1</p>
+		<p class="item dos">2</p>
+		<p class="item tres">3</p>
+		<p class="item cuatro">4</p>
+	</div>
+</body>
+</html>

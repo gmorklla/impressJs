@@ -50,7 +50,8 @@ table {
 /* Set font */
 /* Delays */
 /* ----- Styles implementations ----- */
-html, body {
+html,
+body {
   font-family: "Arsenal", sans-serif !important; }
 
 .fallback-message {
@@ -59,7 +60,8 @@ html, body {
 .titulo {
   font-family: "Anton", sans-serif !important; }
 
-.lightTxt, .titulo {
+.lightTxt,
+.titulo {
   color: azure !important; }
 
 .present .segundo {
@@ -83,21 +85,67 @@ html, body {
   -o-animation-delay: 0.75s !important;
   animation-delay: 0.75s !important; }
 
+.present .quinto {
+  -webkit-animation-delay: 1s !important;
+  -moz-animation-delay: 1s !important;
+  -ms-animation-delay: 1s !important;
+  -o-animation-delay: 1s !important;
+  animation-delay: 1s !important; }
+
+.present .sexto {
+  -webkit-animation-delay: 1.25s !important;
+  -moz-animation-delay: 1.25s !important;
+  -ms-animation-delay: 1.25s !important;
+  -o-animation-delay: 1.25s !important;
+  animation-delay: 1.25s !important; }
+
+.present .septimo {
+  -webkit-animation-delay: 1.5s !important;
+  -moz-animation-delay: 1.5s !important;
+  -ms-animation-delay: 1.5s !important;
+  -o-animation-delay: 1.5s !important;
+  animation-delay: 1.5s !important; }
+
+.present .octavo {
+  -webkit-animation-delay: 1.75s !important;
+  -moz-animation-delay: 1.75s !important;
+  -ms-animation-delay: 1.75s !important;
+  -o-animation-delay: 1.75s !important;
+  animation-delay: 1.75s !important; }
+
+.present .noveno {
+  -webkit-animation-delay: 2s !important;
+  -moz-animation-delay: 2s !important;
+  -ms-animation-delay: 2s !important;
+  -o-animation-delay: 2s !important;
+  animation-delay: 2s !important; }
+
+.present .decimo {
+  -webkit-animation-delay: 2.25s !important;
+  -moz-animation-delay: 2.25s !important;
+  -ms-animation-delay: 2.25s !important;
+  -o-animation-delay: 2.25s !important;
+  animation-delay: 2.25s !important; }
+
 .step {
   font-size: 48px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-style: normal; }
 
 .slide {
   font-size: 30px;
-  line-height: 36px; }
+  line-height: 36px;
+  font-style: normal; }
 
 .slide q {
   font-size: 50px;
-  line-height: 72px; }
+  line-height: 72px;
+  font-style: normal; }
 
 .slide .txt {
   font-size: 25px;
   line-height: 30px;
+  font-style: normal;
   color: lightslategray !important; }
 
 #eslabon {
@@ -106,6 +154,7 @@ html, body {
 .eslabon .try {
   font-size: 64px;
   line-height: 50px;
+  font-style: normal;
   -webkit-transform: translateZ(20px);
   -ms-transform: translateZ(20px);
   -o-transform: translateZ(20px);
@@ -114,6 +163,7 @@ html, body {
 .eslabon h1 {
   font-size: 100px;
   line-height: 150px;
+  font-style: normal;
   -webkit-transform: translateZ(50px);
   -ms-transform: translateZ(50px);
   -o-transform: translateZ(50px);
@@ -121,19 +171,35 @@ html, body {
 
 .eslabon .footnote {
   font-size: 32px;
-  line-height: 1; }
+  line-height: 1;
+  font-style: normal; }
+
+.eslabon iframe {
+  position: absolute;
+  top: -60%;
+  left: 80%; }
 
 #misticaEs {
   font-size: 60px;
-  line-height: 1; }
+  line-height: 1;
+  font-style: normal; }
+  #misticaEs.present .quinto {
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY; }
+  #misticaEs iframe {
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 #misticaEs b {
   font-size: 250px;
-  line-height: 250px; }
+  line-height: 250px;
+  font-style: normal; }
 
 #misticaEs .thoughts {
   font-size: 90px;
-  line-height: 150px; }
+  line-height: 150px;
+  font-style: normal; }
 
 #its-in-3d b {
   -webkit-transform: translateZ(40px);
@@ -141,7 +207,8 @@ html, body {
   -o-transform: translateZ(40px);
   transform: translateZ(40px); }
 
-#its-in-3d b, #its-in-3d span {
+#its-in-3d b,
+#its-in-3d span {
   display: inline-block;
   transition: 0.5s; }
 
@@ -184,7 +251,8 @@ html, body {
   -o-transform: translateZ(-10px);
   transform: translateZ(-10px);
   font-size: 32px;
-  line-height: 1; }
+  line-height: 1;
+  font-style: normal; }
 
 #its-in-3d.present b {
   -webkit-transform: translateZ(0px);
@@ -205,6 +273,7 @@ html, body {
   transform: translateY(400px);
   font-size: 20px;
   line-height: 1;
+  font-style: normal;
   display: none;
   position: fixed;
   left: 0;
@@ -222,3 +291,85 @@ html, body {
   -ms-transform: translateY(0px);
   -o-transform: translateY(0px);
   transform: translateY(0px); }
+
+#imagination {
+  color: azure !important;
+  font-size: 30px;
+  line-height: 55px;
+  font-style: italic; }
+  #imagination .fadeInLeft {
+    opacity: 0; }
+  #imagination .cuarto {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    color: slategrey !important;
+    border-radius: 10px !important;
+    padding: 5px !important;
+    text-align: center;
+    color: violet !important; }
+  #imagination p b {
+    font-family: "Anton", sans-serif !important;
+    color: lightslategray !important;
+    font-size: 40px;
+    line-height: 45px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center; }
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; }
+
+.flex-item {
+  background: violet !important;
+  padding: 5px;
+  width: auto;
+  height: 50px;
+  margin-top: 5px;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.5em;
+  text-align: center;
+  border-radius: 10px; }
+
+#source p {
+  font-family: "Anton", sans-serif !important;
+  color: lightslategray !important;
+  font-size: 40px;
+  line-height: 45px;
+  font-style: italic; }
+
+#source q {
+  font-family: "Arsenal", sans-serif !important;
+  color: violet !important;
+  font-size: 40px;
+  line-height: 1;
+  font-style: normal;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: slategrey !important;
+  border-radius: 10px !important;
+  padding: 5px !important; }
+
+#source .animated {
+  opacity: 0; }
+
+#source.present .primero,
+#source.present .segundo,
+#source.present .tercero,
+#source.present .cuarto,
+#source.present .quinto,
+#source.present .sexto,
+#source.present .septimo,
+#source.present .octavo,
+#source.present .noveno,
+#source.present .decimo {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp; }

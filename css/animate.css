@@ -1010,6 +1010,7 @@
   }
 
   to {
+    opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
@@ -1943,6 +1944,7 @@
   }
 
   to {
+    opacity: 1;
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
   }
@@ -1976,6 +1978,7 @@
   }
 
   to {
+    opacity: 1;
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
   }

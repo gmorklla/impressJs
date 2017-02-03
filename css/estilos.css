@@ -538,28 +538,6 @@ a:focus {
     color: tomato;
 }
 
-#imagination.present .cuarto {
-    color: yellowgreen;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-#imagination .fadeInLeft {
-    opacity: 0;
-}
-
-#imagination {
-    color: azure;
-    font-size: 30px;
-    font-style: italic;
-}
-
-#imagination p b {
-    font-family: 'Anton', sans-serif !important;
-    font-size: 40px;
-    line-height: 45px;
-}
-
 /* #misticaEs */
 
 #misticaEs p {

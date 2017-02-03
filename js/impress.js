@@ -608,11 +608,49 @@
                 event.target.classList.remove( "past" );
                 event.target.classList.remove( "future" );
                 event.target.classList.add( "present" );
+
+                // ----------------- Tiene animación canvas, insertar
+
+
+                function create(htmlStr) {
+                    var frag = document.createDocumentFragment(),
+                        temp = document.createElement('div');
+                    temp.innerHTML = htmlStr;
+                    while (temp.firstChild) {
+                        frag.appendChild(temp.firstChild);
+                    }
+                    return frag;
+                }
+
+
+
+                if(event.target.className.indexOf("hasAnim") != -1) {
+
+                    var configuracion = JSON.parse(event.target.getAttribute('ani-config'));
+                    var iframe = '<iframe id="aniFrame" class="animated quinto" src="canvas/' + configuracion.nombre + '/' + configuracion.nombre + '.html" width="' + configuracion.width + '" height="' + configuracion.height + '" frameborder="0"></iframe>'
+
+                    var fragment = create(iframe);
+                    var elemento = document.getElementById(event.target.id);
+                    elemento.insertBefore(fragment, elemento.childNodes[0]);
+
+                }
+
             }, false );
 
             root.addEventListener( "impress:stepleave", function( event ) {
                 event.target.classList.remove( "present" );
                 event.target.classList.add( "past" );
+
+                // ----------------- Tiene animación canvas, remove
+
+                if(event.target.className.indexOf("hasAnim") != -1) {
+                    setTimeout(function () {
+                        document.getElementById("aniFrame").outerHTML = "";
+                    }, 2000);
+                    
+                }
+
+
             }, false );
 
         }, false );

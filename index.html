@@ -64,10 +64,15 @@
             <q class="txt">En este curso descubrirás la <span>estructura</span> del GPUPM desde sus inicios hasta la aparición de nuestra empresa Sistemas de Salud del Dr. Simi, además podrás conocer los <span>beneficios</span> que recibes como parte de la empresa, misión, visión, valores, etc.</q>
             <q class="txt"><b><span class="especial" style="color: #708090 !important">¡Recuerda que al ser parte del Grupo…</span></b></q>
         </div>
-        <div id="eslabon" class="step eslabon" data-x="0" data-y="0" data-scale="4">
+        <div id="eslabon" class="step eslabon hasAnim" data-x="0" data-y="0" data-scale="4" ani-config='{
+                                                                                                            "nombre": "eslabon",
+                                                                                                            "width": "270",
+                                                                                                            "height": "340"
+                                                                                                        }'>
             <span class="try colorOne">eres un eslabón</span>
             <h1>muy importante!</h1>
             <span class="footnote colorTwo">...en la cadena de ayuda a los que menos tienen.</span>
+            
         </div>
         <div id="qEsMistica" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
             <p>¿Qué es la <strong><span>mística?</span></strong>
@@ -82,12 +87,17 @@
             <q class="text-center titulo titleBlock" style="color: azure;">Mística</q>
             <q class="txt text-center"><span class="especial">Es una filosofía de vida que nos enriquece, y la razón de ser de nuestro trabajo.</span></q>
         </div>        
-        <div id="misticaEs" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <div id="misticaEs" class="step hasAnim" data-x="3500" data-y="2100" data-rotate="180" data-scale="6" ani-config='{
+                                                                                                            "nombre": "heart",
+                                                                                                            "width": "140",
+                                                                                                            "height": "140"
+                                                                                                        }'>
             <p>Mística es <b>amor</b></p>
             <span class="animated fadeInLeftCinco">a los clientes</span>
             <span class="animated fadeInLeftTres segundo">al trabajo</span>
             <span class="animated fadeInLeft tercero">a la empresa</span>
             <span class="animated fadeInLeftOcho cuarto">a los colaboradores</span>
+
         </div>
         <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
             <p>también <b>significa</b> :</p>
@@ -103,8 +113,20 @@
             <p class="animated fadeInLeft cuarto">Somos una empresa donde todos ganan.</p>
         </div>
         <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-            <p>Yo actúo</p>
-            <q>con mística cuando...</q>
+            <p>Yo actúo con mística</p>
+            <q>cuando me conduzco con:</q>
+            <ul class="flex-container">
+                <li class="flex-item animated primero">Honestidad</li>
+                <li class="flex-item animated segundo">Confianza</li>
+                <li class="flex-item animated tercero">Compromiso</li>
+                <li class="flex-item animated cuarto">Servicio</li>
+                <li class="flex-item animated quinto">Humildad</li>
+                <li class="flex-item animated sexto">Respeto</li>
+                <li class="flex-item animated septimo">Lealtad</li>
+                <li class="flex-item animated octavo">Justicia</li>
+                <li class="flex-item animated noveno">Generosidad</li>
+                <li class="flex-item animated decimo">Trabajo en equipo</li>
+            </ul>
         </div>
         <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
             <p>one more thing...</p>
@@ -118,7 +140,7 @@
     </div>
     <div class="hint">
         <p>Usa las flechas de tu teclado para navegar</p>
-    </div>
+    </div> 
     <script>
     if ("ontouchstart" in document.documentElement) {
         document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";

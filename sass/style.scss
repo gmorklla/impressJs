@@ -2,14 +2,15 @@
 
 @import 'reset';
 
-
-
 /* ----- Variables ----- */
+
 
 /* Fonts */
 
-$font-primero: 'Arsenal', sans-serif !important;
-$font-segundo: 'Anton', sans-serif !important;
+$font-primero: 'Arsenal',
+sans-serif !important;
+$font-segundo: 'Anton',
+sans-serif !important;
 
 /* Colors */
 
@@ -18,185 +19,320 @@ $color-segundo: violet !important;
 $color-tercero: yellowgreen !important;
 $color-cuarto: azure !important;
 
-
-
 /* ----- Mixins ----- */
+
 
 /* Set font */
 
-@mixin setFont($size, $lineH) {
-	font-size: $size;
-	line-height: $lineH;
+@mixin setFont($size, $lineH, $estilo) {
+    font-size: $size;
+    line-height: $lineH;
+    font-style: $estilo;
 }
+
 
 /* Delays */
 
 @mixin aniDelay($delay) {
     -webkit-animation-delay: $delay !important;
-    -moz-animation-delay:    $delay !important;
-    -ms-animation-delay:     $delay !important;
-    -o-animation-delay:      $delay !important;
-    animation-delay:         $delay !important;
+    -moz-animation-delay: $delay !important;
+    -ms-animation-delay: $delay !important;
+    -o-animation-delay: $delay !important;
+    animation-delay: $delay !important;
 }
 
 @mixin traDelay($delay) {
-	-webkit-transition-delay: $delay;
-	-o-transition-delay: $delay;
-	transition-delay: $delay;
+    -webkit-transition-delay: $delay;
+    -o-transition-delay: $delay;
+    transition-delay: $delay;
 }
 
 @mixin transition($time) {
-	transition: $time;
+    transition: $time;
 }
 
 @mixin transZ($pixels) {
-	-webkit-transform: translateZ($pixels);
-	-ms-transform: translateZ($pixels);
-	-o-transform: translateZ($pixels);
-	transform: translateZ($pixels);
+    -webkit-transform: translateZ($pixels);
+    -ms-transform: translateZ($pixels);
+    -o-transform: translateZ($pixels);
+    transform: translateZ($pixels);
 }
 
 @mixin transY($pixels) {
-	-webkit-transform: translateY($pixels);
-	-ms-transform: translateY($pixels);
-	-o-transform: translateY($pixels);
-	transform: translateY($pixels);
+    -webkit-transform: translateY($pixels);
+    -ms-transform: translateY($pixels);
+    -o-transform: translateY($pixels);
+    transform: translateY($pixels);
+}
+
+@mixin resalta() {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    color: slategrey !important;
+    border-radius: 10px !important;
+    padding: 5px !important;
+}
+
+@mixin boldFont($color, $size, $fH, $estilo) {
+    font-family: $font-segundo;
+    color: $color;
+    @include setFont($size, $fH, $estilo);
+}
+
+@mixin normalFont($color, $size, $fH, $estilo) {
+    font-family: $font-primero;
+    color: $color;
+    @include setFont($size, $fH, $estilo);
+}
+
+@mixin addAnim($name) {
+    -webkit-animation-name: $name;
+    animation-name: $name;
 }
 
 
 /* ----- Styles implementations ----- */
 
-html, body {
-	font-family: $font-primero;
+html,
+body {
+    font-family: $font-primero;
 }
 
 .fallback-message {
-	font-family: $font-primero;
+    font-family: $font-primero;
 }
 
 .titulo {
-	font-family: $font-segundo;
+    font-family: $font-segundo;
 }
 
-.lightTxt, .titulo {
-	color: $color-cuarto;
+.lightTxt,
+.titulo {
+    color: $color-cuarto;
 }
 
 .present .segundo {
-	@include aniDelay(0.25s);
+    @include aniDelay(0.25s);
 }
 
 .present .tercero {
-	@include aniDelay(0.5s);
+    @include aniDelay(0.5s);
 }
 
 .present .cuarto {
-	@include aniDelay(0.75s);
+    @include aniDelay(0.75s);
+}
+
+.present .quinto {
+    @include aniDelay(1s);
+}
+
+.present .sexto {
+    @include aniDelay(1.25s);
+}
+
+.present .septimo {
+    @include aniDelay(1.5s);
+}
+
+.present .octavo {
+    @include aniDelay(1.75s);
+}
+
+.present .noveno {
+    @include aniDelay(2s);
+}
+
+.present .decimo {
+    @include aniDelay(2.25s);
 }
 
 .step {
-	@include setFont(48px, 1.5);
+    @include setFont(48px, 1.5, normal);
 }
 
 .slide {
-	@include setFont(30px, 36px);
+    @include setFont(30px, 36px, normal);
 }
 
 .slide q {
-	@include setFont(50px, 72px);
+    @include setFont(50px, 72px, normal);
 }
 
 .slide .txt {
-	@include setFont(25px, 30px);
-	color: $color-primero;
+    @include setFont(25px, 30px, normal);
+    color: $color-primero;
 }
 
 #eslabon {
-	color: $color-cuarto;
+    color: $color-cuarto;
 }
 
 .eslabon {
-	.try {
-		@include setFont(64px, 50px);
-		@include transZ(20px);
-	}
-	h1 {
-		@include setFont(100px, 150px);
-		@include transZ(50px);
-	}
-	.footnote {
-		@include setFont(32px, 1);
-	}
+    .try {
+        @include setFont(64px, 50px, normal);
+        @include transZ(20px);
+    }
+    h1 {
+        @include setFont(100px, 150px, normal);
+        @include transZ(50px);
+    }
+    .footnote {
+        @include setFont(32px, 1, normal);
+    }
+    iframe {
+    	position: absolute;
+    	top: -60%;
+    	left: 80%;
+    }
 }
 
 #misticaEs {
-	@include setFont(60px, 1);
+    @include setFont(60px, 1, normal);
+    &.present .quinto {
+    	@include addAnim(flipInY);
+    }
+    iframe {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }    
 }
 
 #misticaEs b {
-	@include setFont(250px, 250px);
+    @include setFont(250px, 250px, normal);
 }
 
 #misticaEs .thoughts {
-	@include setFont(90px, 150px);
+    @include setFont(90px, 150px, normal);
 }
 
 #its-in-3d {
-	b {
-		@include transZ(40px);
-	}
-	b, span {
-		display: inline-block;
-		@include transition(0.5s);
-	}
-	p {
-		transform-style: preserve-3d;
-	}
-	.have {
-		@include transZ(-40px);
-	}
-	.you {
-		@include transZ(20px);
-	}
-	.noticed {
-		@include transZ(-40px);
-	}
-	.its {
-		@include transZ(60px);
-	}
-	.in {
-		@include transZ(-10px);
-	}
-	.footnote {
-		@include transZ(-10px);
-		@include setFont(32px, 1);
-	}
-	&.present b {
-		@include transZ(0px);
-	}
-	&.present span {
-		@include transZ(0px);
-	}
+    b {
+        @include transZ(40px);
+    }
+    b,
+    span {
+        display: inline-block;
+        @include transition(0.5s);
+    }
+    p {
+        transform-style: preserve-3d;
+    }
+    .have {
+        @include transZ(-40px);
+    }
+    .you {
+        @include transZ(20px);
+    }
+    .noticed {
+        @include transZ(-40px);
+    }
+    .its {
+        @include transZ(60px);
+    }
+    .in {
+        @include transZ(-10px);
+    }
+    .footnote {
+        @include transZ(-10px);
+        @include setFont(32px, 1, normal);
+    }
+    &.present b {
+        @include transZ(0px);
+    }
+    &.present span {
+        @include transZ(0px);
+    }
 }
 
 .hint {
-	@include transY(400px);
-	@include setFont(20px, 1);
+    @include transY(400px);
+    @include setFont(20px, 1, normal);
     display: none;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 100px;
-
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: #EEE;
     text-align: center;
     padding: 20px;
-
     z-index: 100;
     opacity: 0;
 }
 
 .impress-on-bored .hint {
-	@include transY(0px);
+    @include transY(0px);
+}
+
+#imagination {
+    color: $color-cuarto;
+    @include setFont(30px, 55px, italic);
+    .fadeInLeft {
+        opacity: 0;
+    }
+    .cuarto {
+        @include resalta();
+        text-align: center;
+        color: $color-segundo;
+    }
+    p b {
+        @include boldFont($color-primero, 40px, 45px, italic);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background: $color-segundo;
+    padding: 5px;
+    width: auto;
+    height: 50px;
+    margin-top: 5px;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.5em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#source {
+    p {
+        @include boldFont($color-primero, 40px, 45px, italic);
+    }
+    q {
+        @include normalFont($color-segundo, 40px, 1, normal);
+        @include resalta();
+    }
+    .animated {
+    	opacity: 0;
+    }
+    &.present {
+        .primero,
+        .segundo,
+        .tercero,
+        .cuarto,
+        .quinto,
+        .sexto,
+        .septimo,
+        .octavo,
+        .noveno,
+        .decimo {
+            @include addAnim(bounceInUp);
+        }
+    }
 }
